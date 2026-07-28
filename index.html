@@ -50,11 +50,21 @@
     }
 
     .logo {
-      font-family: "Cormorant Garamond", serif;
-      font-size: 24px;
-      letter-spacing: 4px;
-      font-weight: 700;
-    }
+  font-family: "Cormorant Garamond", serif;
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
+.logo br {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .logo br {
+    display: block;
+  }
+}
 
     .nav a {
       color: var(--moss);
@@ -64,12 +74,14 @@
       letter-spacing: 0.5px;
     }
 
-    .nav .book {
-      background: var(--cypress);
-      color: white;
-      padding: 12px 22px;
-      border-radius: 40px;
-    }
+  .nav .book {
+  background: var(--cypress);
+  color: white;
+  padding: 10px 16px;
+  border-radius: 40px;
+  white-space: nowrap;
+  font-size: 14px;
+}
 
     .hero {
       min-height: 100vh;
@@ -426,19 +438,45 @@ transform:scale(1.03);
   }
 
   .nav {
-    padding: 16px 20px;
-  }
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
 
-  .logo {
-    font-size: 19px;
-    letter-spacing: 2px;
-  }
+.nav > div:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-shrink: 0;
+}
 
-  .nav .book {
-    padding: 10px 15px;
-    font-size: 12px;
-    margin-left: 0;
-  }
+.logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1;
+  white-space: nowrap;
+  flex-shrink: 1;
+}
+
+.nav .book {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cypress);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 40px;
+  font-size: 12px;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-left: 0;
+  flex-shrink: 0;
+}
 
   .hero {
     min-height: auto;
@@ -568,7 +606,9 @@ transform:scale(1.03);
 <body>
 
   <nav class="nav">
-    <div class="logo">STAV SAHAR</div>
+    <div class="logo">
+  STAV<br>SAHAR
+</div>
     <div>
       <a href="#about">About</a>
       <a href="#work">Work</a>
