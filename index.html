@@ -83,6 +83,8 @@
   line-height: 1.15;
 }
 
+
+
 @media (max-width: 600px) {
   .logo br {
     display: block;
@@ -423,6 +425,24 @@ box-shadow:0 30px 80px rgba(0,0,0,.15);
 transition:.4s;
 
 }
+.certification {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.certificate-wrap {
+  width: 100%;
+}
+
+.certificate-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(44, 52, 36, 0.12);
+}
 
 .about-photo:hover{
 
@@ -430,6 +450,10 @@ transform:scale(1.03);
 
 }
     @media (max-width: 900px) {
+      .certification {
+        grid-template-columns: 1fr;
+        gap: 35px;
+     }
       .hero,
       .split {
         grid-template-columns: 1fr;
@@ -653,12 +677,31 @@ transform:scale(1.03);
     </div>
   </nav>
 
+ <section class="certification">
+  <div class="certification-text">
+    <div class="eyebrow">CERTIFICATION</div>
+    <h2 class="section-title">Certified Life Coach</h2>
+
+    <p class="section-text">
+      Certified by the Life Coach Training Institute after completing
+      30 hours of coach-specific training.
+    </p>
+  </div>
+
+  <div class="certificate-wrap">
+    <img
+      src="images/certificate.jpg"
+      alt="Stav Sahar Certified Life Coach Certificate"
+      class="certificate-img"
+    >
+  </div>
+
   <header class="hero">
     <div>
       <div class="eyebrow">Life Coaching</div>
-      <h1>Clarity for the life you are building.</h1>
+      <h1>Clarity for the life you are creating.</h1>
       <p>
-        Stav Sahar helps people create direction, confidence and inner structure through calm, honest and practical coaching conversations. Consultaion languages are English and Hebrew.
+        Stav Sahar supports people in finding direction, building confidence, and creating inner structure through honest, practical, and empowering coaching conversations. Sessions are available in English and Hebrew.
       </p>
       <div class="buttons">
         <a href="#" class="btn btn-primary open-booking">Book Your Session</a>
@@ -680,10 +723,7 @@ transform:scale(1.03);
 
       <p class="section-text">
 
-        Getting advices from an objective point of view, creating 
-        a better pattern of behaviour, acknowledging where we do 
-        things that no longer serve us and fighting self doubt 
-        and limiting beliefs we hold on to together.
+        Through an objective perspective and supportive guidance, we work together to create healthier patterns, recognize what no longer serves us, and overcome self-doubt and limiting beliefs that hold us back.
       </p>
     </div>
 
@@ -706,7 +746,7 @@ transform:scale(1.03);
     <div>
       <h2 class="section-title">How Can Life Coaching Sessions Help Me?</h2>
       <p class="section-text">
-        Your way of thinking and your self talk is reflected by your reality and influencing your surroundings- I am here to make sure you are satisfied with your life.
+        The way you think and speak to yourself shapes your reality and influences the world around you. I’m here to help you create a life you feel truly satisfied with.
       </p>
     </div>
 
@@ -731,31 +771,31 @@ transform:scale(1.03);
   <section id="services">
     <h2 class="section-title">What can we work on?</h2>
     <p class="section-text">
-      Sessions can focus on life direction, career choices, confidence, relationships, discipline, productivity, personal identity or difficult transitions.
+      Together, we can explore the areas of your life where you want more clarity, growth, and alignment. Sessions may focus on life direction, career choices, confidence, relationships, discipline, productivity, personal identity, or navigating periods of change and transition.
     </p>
 
     <div class="cards">
       <div class="card">
         <h3>Life Direction</h3>
-        <p>For moments when you feel stuck, uncertain, or ready for a new chapter.When you’re ready to recognize patterns of behaviour that don’t serve you.</p>
+        <p>For moments when you feel stuck, uncertain, or ready for a new chapter. Together, we can explore your values, recognize patterns that no longer serve you, and create a clearer path forward.</p>
       </div>
 
       <div class="card">
         <h3>Mindset</h3>
-        <p>For confidence, self-trust, emotional clarity and decision-making and to feel complete with yourself.</p>
+        <p>For building confidence, self-trust, emotional clarity, and making decisions that feel aligned with who you are.</p>
       </div>
 
       <div class="card">
         <h3>Discipline</h3>
-        <p>For building habits, structure and consistency without burning yourself out.</p>
+        <p>For creating habits, structure, and consistency in a way that supports your growth without leading to burnout.</p>
       </div>
     </div>
   </section>
 
   <section class="booking" id="booking">
-    <h2 class="section-title">Book a coaching session.</h2>
+    <h2 class="section-title">Book your coaching session.</h2>
     <p class="section-text" style="margin:auto;">
-      Choose a time that works for you. The booking will be connected to Google Calendar.
+      Choose a time that feels right for you, and we’ll reserve your session through Google Calendar.
     </p>
 
     <a href="https://calendar.app.google/zQi9JYSqgdASpw6z6" target="_blank" class="btn btn-primary">
@@ -769,17 +809,17 @@ transform:scale(1.03);
 
       <div class="faq-item">
         <h3>Is this therapy?</h3>
-        <p>No. Coaching is focused on clarity, decisions, habits and future action. It does not replace therapy or medical support.</p>
+        <p>No. Coaching focuses on gaining clarity, making decisions, building habits, and taking intentional action toward your goals. It does not replace therapy or medical support.</p>
       </div>
 
       <div class="faq-item">
         <h3>Where do sessions happen?</h3>
-        <p>Sessions can be held online through Google Meet after booking a time.</p>
+        <p>Sessions are held online through Google Meet after booking a convenient time.</p>
       </div>
 
       <div class="faq-item">
         <h3>What should I prepare?</h3>
-        <p>Come with one question, situation or area of life where you want more clarity.</p>
+        <p>Come with a question, situation, or area of your life where you would like more clarity, direction, or support.</p>
       </div>
     </div>
   </section>
